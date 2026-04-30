@@ -590,7 +590,7 @@ const page = () => {
         <div className="flex items-center justify-center -translate-y-[3px]">
           <button className="focus:outline-none group" tabIndex={0}>
             <div className="flex justify-center w-[44px] h-[44px] rounded-full cursor-pointer transition-all duration-300">
-              <div className="flex items-center justify-center w-[40px] h-[40px] bg-white rounded-full border border-gray-200">
+              <div className="flex items-center justify-center w-[40px] h-[40px] rounded-full border border-black/20">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-plus text-gray-900" aria-hidden="true">
                   <path d="M5 12h14"></path>
                   <path d="M12 5v14"></path>
