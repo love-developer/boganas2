@@ -185,11 +185,11 @@ const page = () => {
       {/* main home */}
       <section
         dir="rtl"
-        className={`pt-6 pb-20 relative`}
+        className={`pt-3 md:pt-6 pb-20 relative`}
       >
         <img src="/logo.png" alt="" className='w-[200px] mx-auto' />
         <div className="mx-auto flex max-w-5xl flex-col items-center px-4 text-center mb-10">
-          <div className='py-[18px] '>
+          <div className='py-[5px] '>
             <h2
               className="hidden md:visible mb-3 text-[18px] md:text-[20px] leading-[1.3] font-semibold text-[#ecbe02]"
               style={{ textShadow: '1px 3px 4px rgba(0,0,0,0.11)' }}
