@@ -58,7 +58,7 @@ const page = () => {
     <div>
       {/* nav  */}
       <div>
-        <nav className="lg:hidden border-b border-gray-200 bg-white" dir="rtl">
+        <nav className="lg:hidden border-b border-gray-200" dir="rtl">
           <div className="grid h-[76px] grid-cols-3 items-center px-3">
             <div className="flex justify-start">
               <img src="/logo.png" alt="Boganas Logo" className="h-14 w-auto object-contain" />
@@ -202,7 +202,7 @@ const page = () => {
             </h1>
           </div>
 
-          <form className="mt-[32px] w-full max-w-[375px] mx-auto rounded-xl border border-[#e4e4e4] bg-white p-[24px] flex flex-col gap-[12px]"
+          <form className="mt-[32px] w-full max-w-[355px] mx-auto rounded-xl border border-[#e4e4e4] bg-white p-[24px] flex flex-col gap-[12px]"
             style={{ boxShadow: 'rgba(0, 0, 0, 0.2) 0px 0px 14px 0px' }}>
             <div>
               <div className="relative mb-3">
@@ -450,7 +450,7 @@ const page = () => {
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
-                boxShadow: '0 6px 16px rgba(0, 0, 0, 0.12)',
+                boxShadow: 'rgba(0, 0, 0, 0.35) 0px 4px 20px 2px',
               }}
             >
               <div className="absolute inset-0 bg-black/60" />
