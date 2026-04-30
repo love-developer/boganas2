@@ -185,11 +185,11 @@ const page = () => {
       {/* main home */}
       <section
         dir="rtl"
-        className={`pt-10 pb-20 relative`}
+        className={`pt-6 pb-20 relative`}
       >
-        <img src="/logo.png" alt="" className='md:hidden w-[200px] mx-auto' />
+        <img src="/logo.png" alt="" className='w-[200px] mx-auto' />
         <div className="mx-auto flex max-w-5xl flex-col items-center px-4 text-center mb-10">
-          <div className='py-[24px] '>
+          <div className='py-[18px] '>
             <h2
               className="hidden md:visible mb-3 text-[18px] md:text-[20px] leading-[1.3] font-semibold text-[#ecbe02]"
               style={{ textShadow: '1px 3px 4px rgba(0,0,0,0.11)' }}
@@ -197,8 +197,8 @@ const page = () => {
 
               أنت في المكان الصحيح إذا كنت تبحث عن
             </h2>
-            <h1 className="text-[20px] md:text-[48px] md:leading-[72px] font-[600] text-[#403230]">
-              شقق للإيجار | بيوت للبيع
+            <h1 className="text-[24px] font-[600] text-[#403230]">
+              إبحث عن عقارك
             </h1>
           </div>
 
@@ -520,13 +520,13 @@ const page = () => {
       <section className={`pt-[200px] md:pt-[250px] px-4 w-full pb-20`} dir="rtl">
         <div className="mx-auto max-w-4xl">
           <div className="mb-4">
-            <h2 className="text-center text-[28px] font-bold text-[#06152d] md:text-[32px]">أحدث الإعلانات</h2>
+            <h2 className="text-center text-[20px] font-bold text-[#06152d]">أحدث الإعلانات</h2>
           </div>
 
           <div className="flex flex-col gap-2">
             {featuredCards.map((card) => (
               <article key={card.id} className="overflow-hidden group relative mb-2 flex h-auto cursor-pointer select-none flex-col rounded-[14px] bg-white py-0 transition-all duration-200 hover:bg-gray-50/50 active:scale-[0.99] active:bg-gray-50/50 md:rounded-[10px] md:border md:border-gray-200 md:bg-white relative" style={{ boxShadow: 'rgba(0, 0, 0, 0.2) 0px 0px 14px 0px' }}>
-                <div className="absolute top-0 right-0 z-20 bg-[#19B1B1]/80 px-2.5 py-1 text-[11px] font-bold tracking-tight text-white md:top-0 md:right-0 md:left-auto md:rounded-xs md:px-2 md:py-0.5 md:text-[10px] uppercase sm:text-[11px]">
+                <div className="absolute top-0 right-0 z-20 bg-[#19B1B1] px-2.5 py-1 text-[11px] font-bold tracking-tight text-white md:top-0 md:right-0 md:left-auto md:rounded-xs md:px-2 md:py-0.5 md:text-[10px] uppercase sm:text-[11px]">
                   مميز
                 </div>
 
