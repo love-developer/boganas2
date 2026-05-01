@@ -526,7 +526,7 @@ const page = () => {
           <div className="flex flex-col gap-2">
             {featuredCards.map((card) => (
               <article key={card.id} className="overflow-hidden group relative mb-2 flex h-auto cursor-pointer select-none flex-col rounded-[14px] bg-white py-0 transition-all duration-200 hover:bg-gray-50/50 active:scale-[0.99] active:bg-gray-50/50 md:rounded-[10px] md:border md:border-gray-200 md:bg-white relative" style={{ boxShadow: 'rgba(0, 0, 0, 0.2) 0px 0px 14px 0px' }}>
-                <div className="absolute top-0 right-0 z-20 bg-[#19B1B1] px-2.5 py-1 text-[11px] font-bold tracking-tight text-white md:top-0 md:right-0 md:left-auto md:rounded-xs md:px-2 md:py-0.5 md:text-[10px] uppercase sm:text-[11px]">
+                <div className="absolute top-2 left-2 rounded-full z-20 bg-[#19B1B1] px-2.5 py-1 text-[11px] font-bold tracking-tight text-white md:top-0 md:right-0 md:left-auto md:rounded-xs md:px-2 md:py-0.5 md:text-[10px] uppercase sm:text-[11px]">
                   مميز
                 </div>
 
