@@ -59,7 +59,8 @@ const page = () => {
       {/* nav  */}
       <div>
         <nav className="lg:hidden border-b border-gray-200" dir="rtl">
-          <div className="grid h-[76px] grid-cols-3 items-center px-3">
+          <div className="absolute inset-0 bg-gradient-to-b from-white/90 via-white/40 to-transparent pointer-events-none"></div>
+          <div className="relative grid h-[76px] grid-cols-3 items-center px-3">
             <div className="flex justify-start">
               <img src="/logo.png" alt="Boganas Logo" className="h-14 w-auto object-contain" />
             </div>
@@ -185,11 +186,11 @@ const page = () => {
       {/* main home */}
       <section
         dir="rtl"
-        className={`pt-3 md:pt-6 pb-20 relative`}
+        className={`pt-10 pb-20 relative`}
       >
-        <img src="/logo.png" alt="" className='w-[200px] mx-auto' />
+        <img src="/logo.png" alt="" className='md:hidden w-[200px] mx-auto' />
         <div className="mx-auto flex max-w-5xl flex-col items-center px-4 text-center mb-10">
-          <div className='py-[5px] '>
+          <div className='py-[24px] '>
             <h2
               className="hidden md:visible mb-3 text-[18px] md:text-[20px] leading-[1.3] font-semibold text-[#ecbe02]"
               style={{ textShadow: '1px 3px 4px rgba(0,0,0,0.11)' }}
@@ -197,8 +198,8 @@ const page = () => {
 
               أنت في المكان الصحيح إذا كنت تبحث عن
             </h2>
-            <h1 className="text-[24px] font-[600] text-[#403230]">
-              إبحث عن عقارك
+            <h1 className="text-[20px] md:text-[48px] md:leading-[72px] font-[600] text-[#403230]">
+              شقق للإيجار | بيوت للبيع
             </h1>
           </div>
 
@@ -450,7 +451,7 @@ const page = () => {
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
-                boxShadow: 'rgba(0, 0, 0, 0.35) 0px 4px 20px 2px',
+                boxShadow: '0 6px 16px rgba(0, 0, 0, 0.12)',
               }}
             >
               <div className="absolute inset-0 bg-black/60" />
@@ -470,20 +471,20 @@ const page = () => {
                 <div className="relative px-6 pb-3 pt-4 text-white">
 
                   {/* LOGO */}
-                  <div className="absolute right-[20px] top-[10px]">
+                  <div className="absolute left-[20px] top-[10px]">
                     <div className="flex h-[66px] md:h-[90px] md:w-[90px] w-[66px] items-center justify-center rounded-full border-2 border-[#e4dbd1] bg-white shadow overflow-hidden">
                       <img src="/image.png" alt="company" className="h-full w-auto" />
                     </div>
                   </div>
 
                   {/* TEXT */}
-                  <div className="pr-0 pl-[0px] text-left">
+                  <div className="pr-0 pl-[0px] text-right">
                     <h3 className="mb-2 text-[20px] md:text-[42px] leading-[1.05] font-extrabold">
-                      PUT YOUR AD HERE
+                      انشر إعلانك هنا
                     </h3>
-                    <p className="text-[18px] md:text-[24px] leading-[1.35] font-semibold text-[#fff4c2]">
-                      8005 9007 965+
-                    </p>
+                    <a href="tel:+96590078005" className="text-[18px] md:text-[24px] leading-[1.35] font-semibold text-[#fff4c2]">
+                      8005 9007
+                    </a>
                   </div>
 
                   {/* BUTTONS */}
@@ -520,24 +521,24 @@ const page = () => {
       <section className={`pt-[200px] md:pt-[250px] px-4 w-full pb-20`} dir="rtl">
         <div className="mx-auto max-w-4xl">
           <div className="mb-4">
-            <h2 className="text-center text-[20px] font-bold text-[#06152d]">أحدث الإعلانات</h2>
+            <h2 className="text-center text-[28px] font-bold text-[#06152d] md:text-[32px]">أحدث الإعلانات</h2>
           </div>
 
           <div className="flex flex-col gap-2">
             {featuredCards.map((card) => (
-              <article key={card.id} className="overflow-hidden group relative mb-2 flex h-auto cursor-pointer select-none flex-col rounded-[14px] bg-white py-0 transition-all duration-200 hover:bg-gray-50/50 active:scale-[0.99] active:bg-gray-50/50 md:rounded-[10px] md:border md:border-gray-200 md:bg-white relative" style={{ boxShadow: 'rgba(0, 0, 0, 0.2) 0px 0px 14px 0px' }}>
-                <div className="absolute top-2 left-2 rounded-full z-20 bg-[#19B1B1] px-2.5 py-1 text-[11px] font-bold tracking-tight text-white md:top-0 md:right-0 md:left-auto md:rounded-xs md:px-2 md:py-0.5 md:text-[10px] uppercase sm:text-[11px]">
+              <article key={card.id} className="overflow-hidden group relative mb-2 flex h-auto cursor-pointer select-none flex-col rounded-[14px] bg-[#ecf5f5] border-[2px] border-[#f3f4f6] py-0 transition-all duration-200 hover:bg-gray-50/50 active:scale-[0.99] active:bg-gray-50/50 md:rounded-[10px] md:border md:border-gray-200 md:bg-white relative">
+                <div className="absolute top-0 right-0 z-20 bg-[#19B1B1] px-2.5 py-1 text-[11px] font-bold tracking-tight text-white md:top-0 md:right-0 md:left-auto md:rounded-xs md:px-2 md:py-0.5 md:text-[10px] uppercase sm:text-[11px]">
                   مميز
                 </div>
 
                 <div className="flex w-full min-h-[118px] flex-row md:min-h-[150px]">
                   <div className="relative w-[120px] shrink-0 self-stretch md:w-[150px] flex items-center justify-center p-0">
-                    <div className="relative w-full h-full overflow-hidden bg-[#dfe7e7] md:m-0 md:h-full md:w-full md:rounded-none md:bg-transparent">
-                      <img alt={card.title} src={card.image} className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105 md:object-cover md:opacity-100" />
+                    <div className="relative w-full h-full overflow-hidden md:m-0 md:h-full md:w-full md:rounded-none md:bg-transparent flex items-center justify-center">
+                      <img alt={card.title} src={card.image} className="h-[100px] w-[100px] object-cover transition-transform duration-300 group-hover:scale-105 md:h-full md:w-full md:object-cover md:opacity-100 rounded-[10px] md:rounded-[0px]" />
                     </div>
                   </div>
 
-                  <div className="flex flex-1 flex-col justify-between overflow-hidden px-2 py-3 md:px-4">
+                  <div className="flex flex-1 flex-col justify-between overflow-hidden px-2 py-2 md:px-4">
                     <div className="flex-1">
                       <div className="mb-1 flex items-start justify-between gap-2">
                         <div className="flex min-w-0 flex-1 items-center gap-1 text-[#0f7f86]">
@@ -590,7 +591,7 @@ const page = () => {
         <div className="flex items-center justify-center -translate-y-[3px]">
           <button className="focus:outline-none group" tabIndex={0}>
             <div className="flex justify-center w-[44px] h-[44px] rounded-full cursor-pointer transition-all duration-300">
-              <div className="flex items-center justify-center w-[40px] h-[40px] rounded-full border border-black/20">
+              <div className="flex items-center justify-center w-[40px] h-[40px] bg-white rounded-full border border-gray-200">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-plus text-gray-900" aria-hidden="true">
                   <path d="M5 12h14"></path>
                   <path d="M12 5v14"></path>
